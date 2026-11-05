@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <!-- Header -->
+        <header class="chat-header">
+
+            <div class="bot-icon">🤖</div>
+
+            <div class="header-info">
+                <h1>AI Chatbot</h1>
+                <p>Your intelligent assistant</p>
+            </div>
+
+            <span class="status">
+                <span class="status-dot"></span>
+                Online
+            </span>
+
+        </header>
+
+        <!-- Chat Messages -->
+        <section class="chat-box" id="chat-box">
+
+            <div class="message bot-message">
+
+                <div class="avatar">🤖</div>
+
+                <div class="message-content">
+                    <span class="sender">AI Assistant</span>
+
+                    <p>
+                        Hello! 👋 Welcome to your AI chatbot.
+                        How can I help you today?
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Input Area -->
+        <form class="chat-input" id="chat-form">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message..."
+                autocomplete="off"
+                aria-label="Type your message"
+                required
+            >
+
+            <button type="submit" id="send-button"
+                    aria-label="Send message">
+                ➤
+            </button>
+
+        </form>
+
+        <!-- Footer -->
+        <footer class="chat-footer">
+            Powered by Python & Flask
+        </footer>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+
+</body>
+</html>

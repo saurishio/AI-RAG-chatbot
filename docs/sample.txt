@@ -1,0 +1,1 @@
+Saurish is building a RAG chatbot using Flask, ChromaDB and Groq. The chatbot retrieves relevant document chunks and passes them to the model as context. The project is deployed for free on Render.
